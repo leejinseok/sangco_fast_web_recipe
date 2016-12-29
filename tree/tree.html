@@ -1,16 +1,44 @@
 <!doctype html>
 <html>
 <head>
+<link rel="stylesheet" href="fontello_tree/css/fontello.css">
 <style>
+    .tree {
+        color:gray;
+    }
      .tree, .tree ul{
         list-style: none;
-         padding-left: 20px;
+         padding-left: 16px;
+    }
+    .tree *:before{
+        width:20px;
+        height:17px;
+        display:inline-block;
+    }
+    .tree label{
+        cursor: pointer;
+    }
+    .tree label:before{
+        content:'\f256';
+        font-family: fontello;
+    }
+    .tree a{
+        text-decoration:none;
+        color:gray;
+    }
+    .tree a:before{
+        content:'\e800';
+        font-family:fontello;
     }
     .tree input[type='checkbox']{
         display: none;
     }
     .tree input[type='checkbox']:checked~ul{
         display:none;
+    }
+    .tree input[type='checkbox']:checked+label:before{
+        content:'\f255';
+        font-family:fontello;
     }
 
 </style>
