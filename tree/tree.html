@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<style>
+     .tree, .tree ul{
+        list-style: none;
+         padding-left: 20px;
+    }
+    .tree input[type='checkbox']{
+        display: none;
+    }
+    .tree input[type='checkbox']:checked~ul{
+        display:none;
+    }
+
+</style>
+</head>
+<body>
+    <ul class='tree'>
+    <li>
+        <input type="checkbox" id="root">
+        <label for="root">ROOT</label>
+        <ul>
+            <li><a href='http://opentutorials.org'>node1</a></li>
+            <li><a href='http://opentutorials.org'>node2</a></li>
+            <li>
+                <input type="checkbox" id="node3">
+                <label for="node3">node3</label>
+                <ul>
+                    <li><a href='http://opentutorials.org'>node3_1</a></li>
+                    <li><a href='http://opentutorials.org'>node3_2</a></li>
+                    <li><a href='http://opentutorials.org'>node3_3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    </ul>
+    
+</body>
+</html>
